@@ -30,6 +30,6 @@ deploy-code-job:
     - git config --global user.name "Nico Meier"
     - git clone $GITLAB_URL
     - git checkout main
-    - git merge feature
+    - git merge origin/feature
     - git remote add github $GITHUB_URL
     - git push github
