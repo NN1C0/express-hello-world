@@ -31,5 +31,5 @@ deploy-code-job:
     - git clone $GITLAB_URL
     - git checkout main
     - git merge origin/feature
-    - git remote add github $GITHUB_URL
+    #- git remote add github $GITHUB_URL
     - git push github
