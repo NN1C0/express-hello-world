@@ -17,7 +17,7 @@ deploy-code-job:
     - docker
   variables:
     GITHUB_URL: "https://github.com/NN1C0/express-hello-world.git"
-    GITLIB_URL: "git@git.nexed.com:nicomeier/ci-cd.git"
+    GITLAB_URL: "git@git.nexed.com:nicomeier/ci-cd.git"
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval `ssh-agent -s`
