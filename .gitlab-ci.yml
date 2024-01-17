@@ -4,6 +4,8 @@ stages:
 
 build-code-job:
   stage: build
+  tags:
+    - docker
   image: node:18-buster
   script:
     - npm init -y
@@ -12,6 +14,8 @@ build-code-job:
 deploy-code-job:
   stage: deploy
   image: node:18-buster
+  tags:
+    - docker
   variables:
     GITHUB_URL: https://github.com/NN1C0/express-hello-world.git
   before_script:
