@@ -29,7 +29,6 @@ deploy-code-job:
     - git config --global user.email "nicomeier3@live.de"
     - git config --global user.name "Nico Meier"
     - git clone $GITLAB_URL
-    - git branch main
     - git checkout main
     - git merge feature
     - git remote add github $GITHUB_URL
