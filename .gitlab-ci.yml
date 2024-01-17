@@ -26,6 +26,9 @@ deploy-code-job:
     - ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
   script:
+    - git config --global user.email "nicomeier3@live.de"
+    - git config --global user.name "Nico Meier"
+    - git branch main
     - git checkout main
     - git merge feature
     - git add remote github $GITHUB_URL
